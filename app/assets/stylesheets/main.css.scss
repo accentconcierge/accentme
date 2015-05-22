@@ -1,0 +1,167 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.inputme{
+  height: 40px;
+  width: 300px;
+  margin-top: 60px;
+  font-size: 30px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white white #3498db white;
+  font-family: 'Raleway', 'sans-serif';
+  outline: 0px;
+  text-align: center;
+}
+
+
+.submitbutton{
+  border-radius: 30px;
+  width: 240px;
+  height: 60px;
+  font-family:'Raleway', 'sans-serif';
+  color: white;
+  background-color: #3498db;
+  margin-top: 50px;
+  font-size: 24px;
+  border: solid;
+  outline: 0px;
+}
+
+#textchanger{
+	font-size: 70px;
+	font-family: 'Ubuntu', sans-serif;
+}
+#textchanger2{
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #606060;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #009bf0;
+}
+.navbar-default .navbar-text {
+  color: #606060;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #606060;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #009bf0;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #009bf0;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #009bf0;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #606060;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #606060;
+}
+.navbar-default .navbar-link {
+  color: #606060;
+}
+.navbar-default .navbar-link:hover {
+  color: #009bf0;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #606060;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #009bf0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #009bf0;
+    background-color: #ffffff;
+  }
+}
+.navbar-brand {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 35px;
+	padding-top: 25px;
+	padding-left:25px;
+  
+}
+.textchanger3{
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 10px;
+	padding-right:20px;
+}
+.learnmore{
+  border-radius: 30px;
+  width: 240px;
+  height: 60px;
+  font-family:'Raleway', 'sans-serif';
+  color: white;
+  background-color: #3498db;
+  margin-top: 50px;
+  font-size: 24px;
+  border: solid;
+  outline: 0px;
+}
+
+.subheader{
+  font-size:40px;
+  font-family: 'Raleway', 'sans-serif';
+  margin-top: 70px;
+  margin-left:100px;
+  margin-right:100px;
+}
+p {
+  font-size:30px;
+  font-family: 'Oxygen', 'sans-serif';
+  margin-top: 70px;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+table, th, td{
+  border: 1px solid black;
+}
