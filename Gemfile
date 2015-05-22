@@ -15,8 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'typedjs-rails', "~> 1.0.2"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
-# Add stripe for payment processing
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
