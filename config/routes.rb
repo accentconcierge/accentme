@@ -3,9 +3,11 @@ Rails.application.routes.draw do
     resources :users
   devise_for :admins, :path_prefix => 'a'
     resources :admins
+  resource  :verifications
+  get 'users#new' => 'users#new'
   root to: "pages#home"
   get 'learn' => 'pages#learn'
-  get 'admin/home' => 'admin#home'
+  get 'admin/index' => 'admin#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

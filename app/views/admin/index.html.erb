@@ -1,0 +1,18 @@
+<h1>Admin Dashboard</h1>
+<h3>Current Users</h3>
+<table>
+ <tr>
+   <th>Email</th>
+   <th>Phone</th>
+ </tr>
+ <% @users.each do |user| %>
+ <tr>
+   <td><%= user.email %></td>
+   <td><%= user.phone %></td>
+   <td><%= link_to 'Edit', 'edit_user_path' %></td>
+   <td><%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you certain you want to delete this?' } %></td>
+ </tr>
+
+ <%end%>
+
+</table>
