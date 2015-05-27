@@ -18,6 +18,9 @@ gem 'typedjs-rails', "~> 1.0.2"
 
 #twilio gem - yipee!!
 gem 'twilio-ruby'
+gem 'authy'
+
+gem 'braintree', '~> 2.43.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

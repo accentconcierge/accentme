@@ -3,11 +3,16 @@ Rails.application.routes.draw do
     resources :users
   devise_for :admins, :path_prefix => 'a'
     resources :admins
-  resource  :verifications
-  get 'users#new' => 'users#new'
+  resources  :verifications
+ 
+
+
   root to: "pages#home"
-  get 'learn' => 'pages#learn'
-  get 'admin/index' => 'admin#index'
+     
+      get 'users/new' => 'users#new'
+      get 'learn' => 'pages#learn'
+      get 'admin/index' => 'admin#index'
+      get 'vault'=>'pages#vault'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

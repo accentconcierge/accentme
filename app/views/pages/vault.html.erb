@@ -1,0 +1,49 @@
+
+<div class = 'jumbotron jumbotron-vault'>
+	<br><br><br>
+<h1 class='vaultheader'> Accent Vault </h1>
+</div>
+<center>
+<% if user_signed_in? %>
+
+<div class="neighborhood-guides">
+    <div class="container">
+        
+        <p>The vault is where all of Accent's Projects are stored. Here, as one of our members, you can experiment with our newest programs.</p>
+    
+        <br><br><br><br>
+    <div class="row">
+        <div class="col-md-4">
+        <div class="thumbnail">
+        <img src="http://goo.gl/0sX3jq">
+        </div>
+         <div class="thumbnail">
+       <img src="http://goo.gl/an2HXY">
+       </div>
+        </div>
+        <div class="col-md-4">
+        <div class="thumbnail">
+        <img src="http://goo.gl/Av1pac"></div>
+        <div class="thumbnail">
+        <img src="http://goo.gl/vw43v1"></div>
+        </div>
+        <div class="col-md-4">
+        <div class="thumbnail">
+        <img src="http://goo.gl/0Kd7UO"></div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+<br><br><br><br>
+<%else%>
+
+<p class='subheader'>Shhhhh. This content is top secret. You must be signed in to view it. <%=link_to 'Log In Here', new_user_session_path %></p>
+
+	<br>
+
+<img src="http://www.xsnrg.org/img/maddog_race/top_secret.png">
+
+<%end%>
+
+</center>
