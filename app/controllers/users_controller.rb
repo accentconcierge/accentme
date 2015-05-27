@@ -14,20 +14,21 @@ class UsersController < ApplicationController
     @user = User.new
   end
  
+
   def create
-    @user = User.new(params[:user])
+    @user = User.new(user_params)
     if @user.save
-      render text: "Thank you! You will receive an SMS shortly with verification instructions."
-      
-      # Instantiate a Twilio client
-      client = Twilio::REST::Client.new(TWILIO_CONFIG['sid'], TWILIO_CONFIG['token'])
-      
-      # Create and send an SMS message
-      client.account.sms.messages.create(
-        from: TWILIO_CONFIG['from'],
-        to: @user.phone,
-        body: "Thanks for signing up. To verify your account, please reply HELLO to this message."
+      # Save the user_id to the session object
+      session[:user_id] = @user.id
+
+      # Create user on Authy, will return an id on the object
+      authy = Authy::API.register_user(
+        email: @user.email,
+        cellphone: @user.phone_number,
+        country_code: @user.country_code
       )
+      @user.update(authy_id: authy.id)
+
     else
       render :new
     end

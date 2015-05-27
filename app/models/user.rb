@@ -4,10 +4,11 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :email, :phone, :password, :password_confirmation
+  attr_accessible :email, :name, :phone_number, :country_code, :password, :password_confirmation
  
 
-  validates :email, :phone, presence: true, uniqueness: true
+  validates :email, :phone_number, presence: true, uniqueness: true
+  validates :name, :country_code, presence: true
 
 
 end
