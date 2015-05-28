@@ -16,7 +16,7 @@ gem 'typedjs-rails', "~> 1.0.2"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-#twilio gem - yipee!!
+#twilio 
 gem 'twilio-ruby'
 gem 'authy'
 
